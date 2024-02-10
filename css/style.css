@@ -46,8 +46,6 @@ h6 {
     max-width: 1158px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 
 }
 
@@ -221,7 +219,8 @@ h6 {
     cursor: pointer;
     border: none;
     padding: 16px 32px;
-    display: block;
+
+
     min-width: 169px;
     border-radius: 4px;
     margin: 0 auto;
@@ -497,6 +496,7 @@ h6 {
 
 .foot-con {
     margin-right: 120px;
+
 }
 
 .footer-logo {
@@ -524,7 +524,8 @@ h6 {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
+
+
 }
 
 .social-media {
@@ -574,4 +575,304 @@ h6 {
 
 .soc-icon-icon {
     fill: #f4f4fd;
+}
+
+.footer-bottom {
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-sub {
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-left: 80px;
+    margin-bottom: 16px;
+
+}
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-input {
+    background-color: unset;
+    padding: 8px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-left: 80px;
+
+}
+
+.footer-input::placeholder {
+    color: #ffffff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+
+.footer-btn {
+    cursor: pointer;
+    display: flex;
+    min-width: 165px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    background-color: #4d5ae5;
+
+}
+
+.btn-sub {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.footer-icon-link {}
+
+.footer-form-icon {
+    fill: #FFFFFF;
+    margin-left: 16px;
+    display: flex;
+
+
+}
+
+
+/* modal */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 408px;
+    min-height: 584px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.modal-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover>.modal-close-icon,
+.modal-close-btn:focus>.modal-close-icon {
+    fill: #ffffff;
+}
+
+.modal-title {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 360px;
+    margin-top: 72px;
+    margin-right: 24px;
+    margin-left: 24px;
+
+}
+
+.modal-form {}
+
+.modal-field {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    margin-top: 16px;
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    border-radius: 4px;
+    outline: transparent;
+    font-size: 16px;
+    color: #4D5AE5;
+    transition-duration: 300ms;
+}
+
+.modal-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition-duration: 300ms;
+}
+
+
+
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-input:focus+.modal-icon {
+    stroke: #4D5AE5;
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    padding-top: 8px;
+    padding-left: 16px;
+    transition-duration: 250ms;
+    resize: none;
+    outline: transparent;
+    margin-bottom: 16px;
+}
+
+.form-check {}
+
+.check-text {
+    color: #8E8F99;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    line-height: 1.17;
+
+}
+
+.check-text-a {
+    color: #4D5AE5;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+}
+
+.checkbox-span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.check-icon {}
+
+.form-check:checked+.check-text span {
+    background-color: var(--OCEAN, #404BBF);
+    border: none;
+    fill: #ffffff;
+}
+
+.send-btn {
+    margin-top: 24px;
+    display: block;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    align-items: center;
+    justify-content: center;
+    margin-left: 119px;
+    margin-right: 120px;
+    cursor: pointer;
+    height: 56px;
+    width: 169px;
+    margin-bottom: 24px;
 }
