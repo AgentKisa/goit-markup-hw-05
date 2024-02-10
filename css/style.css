@@ -667,11 +667,11 @@ h6 {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    opacity: 0;
+    /* opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  */
 }
 
 .is-open {
@@ -690,6 +690,8 @@ h6 {
     background-color: #fcfcfc;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 72px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -732,17 +734,14 @@ h6 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 360px;
-    margin-top: 72px;
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-bottom: 16px;
 
 }
 
 .modal-form {}
 
 .modal-field {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-bottom: 8px;
 }
 
 .modal-label {
@@ -752,7 +751,7 @@ h6 {
     color: var(--LIGHT-SLATE, #8E8F99);
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     margin-top: 16px;
 }
@@ -770,6 +769,9 @@ h6 {
     font-size: 16px;
     color: #4D5AE5;
     transition-duration: 300ms;
+    background-color: transparent;
+    padding-left: 38px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
@@ -777,7 +779,7 @@ h6 {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    transition-duration: 300ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -790,6 +792,10 @@ h6 {
     stroke: #4D5AE5;
 }
 
+.text-field {
+    margin-bottom: 16px
+}
+
 .modal-textarea {
     width: 100%;
     height: 120px;
@@ -799,17 +805,25 @@ h6 {
     color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
-    padding-top: 8px;
-    padding-left: 16px;
-    transition-duration: 250ms;
+    padding: 8px 16px;
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
     outline: transparent;
     margin-bottom: 16px;
+    background-color: transparent;
+}
+
+.modal-textarea:focus {
+    border-color: #4D5AE5;
 }
 
 .form-check {}
+
+.check-field {
+    margin-bottom: 24px;
+}
 
 .check-text {
     color: #8E8F99;
@@ -848,7 +862,7 @@ h6 {
 .form-check:checked+.check-text span {
     background-color: var(--OCEAN, #404BBF);
     border: none;
-    fill: #ffffff;
+    fill: #F4F4FD;
 }
 
 .send-btn {
@@ -871,10 +885,10 @@ h6 {
     letter-spacing: 0.04em;
     align-items: center;
     justify-content: center;
-    margin-left: 119px;
-    margin-right: 120px;
+    margin-left: 95px;
     cursor: pointer;
     height: 56px;
-    width: 169px;
+    min-width: 169px;
     margin-bottom: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
