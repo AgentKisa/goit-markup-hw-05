@@ -46,6 +46,7 @@ h6 {
     max-width: 1158px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 
 }
 
@@ -535,6 +536,11 @@ h6 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+
+}
+
+.soc-container {
+    margin-right: 80px;
 }
 
 
@@ -610,7 +616,6 @@ h6 {
     line-height: 2;
     letter-spacing: 0.04em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    margin-left: 80px;
     color: #ffffff;
 
 }
@@ -634,6 +639,15 @@ h6 {
     border: none;
     border-radius: 4px;
     background-color: #4d5ae5;
+    transition: background-color 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.footer-btn:hover,
+.footer-btn:focus {
+    background: var(--OCEAN, #404BBF);
 
 }
 
@@ -671,7 +685,7 @@ h6 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
@@ -734,7 +748,6 @@ h6 {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 360px;
     margin-bottom: 16px;
 
 }
@@ -754,7 +767,6 @@ h6 {
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    margin-top: 16px;
 }
 
 .modal-input-wrap {
@@ -771,8 +783,8 @@ h6 {
     color: #4D5AE5;
     transition-duration: 300ms;
     background-color: transparent;
-    padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 38px;
 }
 
 .modal-icon {
@@ -813,7 +825,6 @@ h6 {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
     outline: transparent;
-    margin-bottom: 16px;
     background-color: transparent;
 }
 
@@ -868,29 +879,20 @@ h6 {
 }
 
 .send-btn {
-    margin-top: 24px;
-    display: block;
-    padding: 16px 32px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 4px;
-    background: var(--IRIS, #4D5AE5);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
-    color: var(--WHITE, #FFF);
-    text-align: center;
-    font-family: Roboto, sans-serif;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    align-items: center;
-    justify-content: center;
-    margin-left: 95px;
-    cursor: pointer;
-    height: 56px;
+    display: block;
     min-width: 169px;
-    margin-bottom: 24px;
+    height: 56px;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: #4d5ae5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
